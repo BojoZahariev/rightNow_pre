@@ -1,8 +1,12 @@
+const TimePassed = props => {
+  return <p>{props.secs}</p>;
+};
+
 const Perk = props => {
   return (
     <div>
+      <p>{props.title}</p>
       <p>{props.secs}</p>
-      <p>{props.secs % 4 === 0 ? props.secs / 4 : null}</p>
     </div>
   );
 };
@@ -13,10 +17,11 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => setSeconds(seconds + 1), 1000);
   });
-
+  let childrenCount = Math.floor(seconds / 4);
   return (
     <div className='App'>
-      <Perk secs={seconds} />
+      <TimePassed secs={seconds} />
+      <Perk title={'Children'} secs={seconds % 4 === 0 ? seconds / 4 : childrenCount} />
     </div>
   );
 }
