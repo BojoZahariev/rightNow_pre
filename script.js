@@ -1,24 +1,24 @@
-const GetInput = props => {
-  return <div>bbb</div>;
+const Perk = props => {
+  return (
+    <div>
+      <p>{props.secs}</p>
+      <p>{props.secs % 4 === 0 ? props.secs / 4 : null}</p>
+    </div>
+  );
 };
 
-class Container extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      inputValue: '',
-      calories: ''
-    };
-  }
+function App() {
+  const [seconds, setSeconds] = React.useState(0);
 
-  render() {
-    return (
-      <div>
-        <GetInput />
-      </div>
-    );
-  }
+  React.useEffect(() => {
+    setTimeout(() => setSeconds(seconds + 1), 1000);
+  });
+
+  return (
+    <div className='App'>
+      <Perk secs={seconds} />
+    </div>
+  );
 }
 
-const domContainer = document.querySelector('#root');
-ReactDOM.render(<Container />, domContainer);
+ReactDOM.render(<App />, document.getElementById('root'));
