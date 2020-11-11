@@ -7,6 +7,9 @@ const Perk = props => {
     <div>
       <p>{props.title}</p>
       <p>{props.secs}</p>
+      <a href={props.link} target='blank' className='links'>
+        Support
+      </a>
     </div>
   );
 };
@@ -21,8 +24,8 @@ function App() {
   return (
     <div className='App'>
       <TimePassed secs={seconds} />
-      <Perk title={'Children'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} />
-      <Perk title={'Trees cut'} secs={seconds * 475} />
+      <Perk title={'Children'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} link={'www.something.com'} />
+      <Perk title={'Trees cut'} secs={seconds * 475} link={'www.something.com'} />
     </div>
   );
 }
