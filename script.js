@@ -22,6 +22,7 @@ function App() {
     <div className='App'>
       <TimePassed secs={seconds} />
       <Perk title={'Children'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} />
+      <Perk title={'Trees cut'} secs={seconds * 475} />
     </div>
   );
 }
