@@ -17,11 +17,11 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => setSeconds(seconds + 1), 1000);
   });
-  let childrenCount = Math.floor(seconds / 4);
+  let childrenCount = Math.floor(seconds / 5);
   return (
     <div className='App'>
       <TimePassed secs={seconds} />
-      <Perk title={'Children'} secs={seconds % 4 === 0 ? seconds / 4 : childrenCount} />
+      <Perk title={'Children'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} />
     </div>
   );
 }
