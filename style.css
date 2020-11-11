@@ -1,0 +1,10 @@
+.perksContainer {
+  display: flex;
+}
+
+.perks {
+  border: 1px solid #222;
+  padding: 20px;
+  flex-grow: 1;
+  margin: 10px;
+}
