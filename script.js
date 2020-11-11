@@ -28,6 +28,7 @@ function App() {
         <Perk title={'Children'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} link={'www.something.com'} />
         <Perk title={'Trees cut'} secs={seconds * 475} link={'www.something.com'} />
         <Perk title={'Plastic pieces in the ocean'} secs={seconds * 93} link={'www.something.com'} />
+        <Perk title={'Kilograms of CO2 emitted in the air'} secs={seconds * 1165732} link={'www.something.com'} />
       </div>
     </div>
   );
