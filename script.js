@@ -21,6 +21,7 @@ function App() {
     setTimeout(() => setSeconds(seconds + 1), 1000);
   });
   let childrenCount = Math.floor(seconds / 5);
+  let cancerCount = Math.floor(seconds / 3);
   return (
     <div className='App'>
       <TimePassed secs={seconds} />
@@ -29,6 +30,7 @@ function App() {
         <Perk title={'Trees cut'} secs={seconds * 475} link={'www.something.com'} />
         <Perk title={'Plastic pieces in the ocean'} secs={seconds * 93} link={'www.something.com'} />
         <Perk title={'Kilograms of CO2 emitted in the air'} secs={seconds * 1165732} link={'www.something.com'} />
+        <Perk title={'Cancer related death'} secs={seconds % 3 === 0 ? seconds / 3 : cancerCount} link={'www.something.com'} />
       </div>
     </div>
   );
