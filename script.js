@@ -8,7 +8,7 @@ const Perk = props => {
       <p>{props.title}</p>
       <p>{props.secs}</p>
       <a href={props.link} target='blank' className='links'>
-        Support the cause
+        Learn more
       </a>
     </div>
   );
@@ -20,8 +20,8 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => setSeconds(seconds + 1), 1000);
   });
-  let childrenCount = Math.floor(seconds / 5);
-  let cancerCount = Math.floor(seconds / 3);
+  //let childrenCount = Math.floor(seconds / 5);
+  //let cancerCount = Math.floor(seconds / 3);
   return (
     <div className='App'>
       <TimePassed secs={seconds} />
