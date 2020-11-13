@@ -31,7 +31,7 @@ function App() {
         <Perk title={'Plastic pieces in the ocean'} secs={seconds * 93} link={'www.something.com'} />
         <Perk title={'Kilograms of CO2 emitted in the air'} secs={seconds * 1165732} link={'www.something.com'} />
         {/*<Perk title={'Cancer related deaths'} secs={seconds % 3 === 0 ? seconds / 3 : cancerCount} link={'www.something.com'} />*/}
-        <Perk title={'Ice melting in Antarctica'} secs={seconds * 8000} link={'www.something.com'} />
+        <Perk title={'Tons of Ice melting in Antarctica'} secs={seconds * 8000} link={'www.something.com'} />
       </div>
     </div>
   );
