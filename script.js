@@ -26,11 +26,11 @@ function App() {
     <div className='App'>
       <TimePassed secs={seconds} />
       <div className='perksContainer'>
-        <Perk title={'Children under 15 deaths'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} link={'www.something.com'} />
+        {/*<Perk title={'Children under 15 deaths'} secs={seconds % 5 === 0 ? seconds / 5 : childrenCount} link={'www.something.com'} />*/}
         <Perk title={'Trees cut'} secs={seconds * 475} link={'www.something.com'} />
         <Perk title={'Plastic pieces in the ocean'} secs={seconds * 93} link={'www.something.com'} />
         <Perk title={'Kilograms of CO2 emitted in the air'} secs={seconds * 1165732} link={'www.something.com'} />
-        <Perk title={'Cancer related deaths'} secs={seconds % 3 === 0 ? seconds / 3 : cancerCount} link={'www.something.com'} />
+        {/*<Perk title={'Cancer related deaths'} secs={seconds % 3 === 0 ? seconds / 3 : cancerCount} link={'www.something.com'} />*/}
         <Perk title={'Ice melting in Antarctica'} secs={seconds * 8000} link={'www.something.com'} />
       </div>
     </div>
