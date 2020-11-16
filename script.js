@@ -3,6 +3,7 @@ const TimePassed = props => {
 };
 
 const Perk = props => {
+  const [clicked, setClicked] = React.useState(false);
   return (
     <div className='perks'>
       <p>{props.title}</p>
@@ -10,6 +11,8 @@ const Perk = props => {
       <a href={props.link} target='blank' className='links'>
         Learn more
       </a>
+      <button onClick={() => setClicked({ clicked: true })}>Click me</button>
+      {clicked && <p>clicked</p>}
     </div>
   );
 };
