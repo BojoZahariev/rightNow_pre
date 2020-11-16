@@ -8,3 +8,17 @@
   flex-grow: 1;
   margin: 10px;
 }
+
+.perksAnimated {
+  animation: test 0.5s forwards;
+}
+
+@keyframes test {
+  0% {
+    background: #fff;
+  }
+
+  100% {
+    background: #222;
+  }
+}
